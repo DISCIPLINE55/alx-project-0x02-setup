@@ -23,4 +23,19 @@ export interface PostProps {
   id: number;
   title: string;
   body: string;
+  userId: number;
+}
+
+// Add UserProps
+export interface UserProps {
+  id: number;
+  name: string;
+  email: string;
+  address: {
+    street: string;
+    city: string;
+    zipcode: string;
+  };
+  phone: string;
+  website: string;
 }
